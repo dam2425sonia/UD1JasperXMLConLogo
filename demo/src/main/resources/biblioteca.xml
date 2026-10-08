@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca>
+
+    <nombre>Biblioteca Municipal</nombre>
+
+    <libros>
+
+        <libro>
+            <titulo>El Quijote</titulo>
+            <autor>Miguel de Cervantes</autor>
+            <año>1605</año>
+            <precio>25.50</precio>
+        </libro>
+
+        <libro>
+            <titulo>Cien años de soledad</titulo>
+            <autor>Gabriel García Márquez</autor>
+            <año>1967</año>
+            <precio>22.90</precio>
+        </libro>
+
+        <libro>
+            <titulo>1984</titulo>
+            <autor>George Orwell</autor>
+            <año>1949</año>
+            <precio>18.75</precio>
+        </libro>
+
+        <libro>
+            <titulo>La sombra del viento</titulo>
+            <autor>Carlos Ruiz Zafón</autor>
+            <año>2001</año>
+            <precio>21.50</precio>
+        </libro>
+
+        <libro>
+            <titulo>El nombre de la rosa</titulo>
+            <autor>Umberto Eco</autor>
+            <año>1980</año>
+            <precio>19.95</precio>
+        </libro>
+
+    </libros>
+
+</biblioteca>

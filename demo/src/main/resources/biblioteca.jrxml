@@ -1,0 +1,94 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4b130d5c-8c19-4f1e-8439-e73ab7bb888d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<parameter name="LOGO" class="java.io.InputStream"/>
+	<query language="xPath"><![CDATA[/biblioteca/libros/libro]]></query>
+	<field name="titulo" class="java.lang.String">
+		<description><![CDATA[titulo]]></description>
+		<property name="net.sf.jasperreports.xpath.field.expression" value="titulo"/>
+	</field>
+	<field name="autor" class="java.lang.String">
+		<description><![CDATA[autor]]></description>
+		<property name="net.sf.jasperreports.xpath.field.expression" value="autor"/>
+	</field>
+	<field name="año" class="java.lang.Integer">
+		<description><![CDATA[año]]></description>
+		<property name="net.sf.jasperreports.xpath.field.expression" value="año"/>
+	</field>
+	<field name="precio" class="java.math.BigDecimal">
+		<description><![CDATA[precio]]></description>
+		<property name="net.sf.jasperreports.xpath.field.expression" value="precio"/>
+	</field>
+	<variable name="precio1" calculation="Sum" class="java.math.BigDecimal">
+		<expression><![CDATA[$F{precio}]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="85" splitType="Stretch">
+		<element kind="textField" uuid="5913973c-014c-4eeb-ba2a-890e60eaed3c" x="216" y="32" width="150" height="30" fontSize="22.0" blankWhenNull="false" bold="true" underline="false" hTextAlign="Center">
+			<expression><![CDATA["Biblioteca"]]></expression>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="image" uuid="85edbdb9-e4dc-4ec4-94aa-8ec7a68e3662" x="23" y="31" width="50" height="50">
+			<expression><![CDATA[$P{LOGO}]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="31" splitType="Stretch">
+		<element kind="staticText" uuid="2cf720a4-cdbf-48f4-a106-bf3a2f768dc3" x="20" y="0" width="100" height="30" fontSize="14.0" bold="true">
+			<text><![CDATA[Título]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2c19707-b039-463c-94d9-df1c810d3058"/>
+		</element>
+		<element kind="staticText" uuid="02692de1-63a9-453e-955e-d81f19479832" x="160" y="0" width="100" height="30" fontSize="14.0" bold="true">
+			<text><![CDATA[Autor]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28f4a323-35b7-41f1-8554-4cf95b113b89"/>
+		</element>
+		<element kind="staticText" uuid="0dd3bf72-82d5-4078-9901-4f0e8b62ed22" x="300" y="0" width="79" height="30" fontSize="14.0" bold="true">
+			<text><![CDATA[Año]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4dc71e26-a329-44db-bc2d-feb95d2bd552"/>
+		</element>
+		<element kind="staticText" uuid="7c337b49-531a-420b-bf3f-302ca1bdc788" x="390" y="0" width="100" height="30" fontSize="14.0" bold="true" hTextAlign="Right">
+			<text><![CDATA[Precio]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c8568a3-ad07-4b9b-ad51-c25822511e2c"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<element kind="textField" uuid="d646bb21-4475-4d67-96a5-63071f59a5e1" x="20" y="0" width="130" height="30">
+				<expression><![CDATA[$F{titulo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2c19707-b039-463c-94d9-df1c810d3058"/>
+			</element>
+			<element kind="textField" uuid="1a148b09-ab39-4573-bce3-bc363445ba66" x="160" y="0" width="120" height="30">
+				<expression><![CDATA[$F{autor}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28f4a323-35b7-41f1-8554-4cf95b113b89"/>
+			</element>
+			<element kind="textField" uuid="1b133805-e623-41f5-ad1a-67857becd711" x="300" y="0" width="79" height="30">
+				<expression><![CDATA[$F{año}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4dc71e26-a329-44db-bc2d-feb95d2bd552"/>
+			</element>
+			<element kind="textField" uuid="95bf4991-3a83-4129-afd9-c97e8abb123c" x="390" y="0" width="100" height="30" hTextAlign="Right">
+				<expression><![CDATA[$F{precio}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c8568a3-ad07-4b9b-ad51-c25822511e2c"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="55" splitType="Stretch">
+		<element kind="textField" uuid="eb34c263-ccfa-42e7-8d97-0d0e768c2086" x="460" y="10" width="100" height="30">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="56" splitType="Stretch">
+		<element kind="staticText" uuid="782ad6ab-5304-4a20-8cbe-50176b190f8b" x="280" y="10" width="100" height="30">
+			<text><![CDATA[Total Precio:]]></text>
+		</element>
+		<element kind="textField" uuid="cb8413da-479a-45e5-9aab-7522124cd671" x="390" y="10" width="100" height="30" hTextAlign="Right">
+			<expression><![CDATA[$V{precio1}]]></expression>
+		</element>
+	</summary>
+</jasperReport>
