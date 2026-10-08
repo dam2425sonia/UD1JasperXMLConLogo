@@ -24,8 +24,8 @@
 	</variable>
 	<background splitType="Stretch"/>
 	<title height="85" splitType="Stretch">
-		<element kind="textField" uuid="5913973c-014c-4eeb-ba2a-890e60eaed3c" x="216" y="32" width="150" height="30" fontSize="22.0" blankWhenNull="false" bold="true" underline="false" hTextAlign="Center">
-			<expression><![CDATA["Biblioteca"]]></expression>
+		<element kind="textField" uuid="5913973c-014c-4eeb-ba2a-890e60eaed3c" x="0" y="32" width="560" height="30" fontSize="22.0" blankWhenNull="false" bold="true" underline="false" hTextAlign="Center">
+			<expression><![CDATA["Biblioteca Municipal"]]></expression>
 			<property name="com.jaspersoft.studio.unit.width" value="px"/>
 			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
 				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
